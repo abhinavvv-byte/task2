@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhinav's Dev Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+<div class="logo">DevDash</div>
+<ul class="nav-links">
+<li><a href="#tasks">Tasks</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<main class="grid-container">
+<section id="tasks" class="card">
+<h2>Task Manager</h2>
+<div class="input-group">
+<input type="text" id="taskInput" placeholder="Enter a new task...">
+<button id="addTaskBtn">Add Task</button>
+</div>
+<ul id="taskList"></ul>
+</section>
+<section id="contact" class="card">
+<h2>Let's Connect</h2>
+<form id="contactForm">
+<div class="input-group">
+<input type="text" id="name" name="name" placeholder="Your Name">
+<span class="error" id="nameError"></span>
+</div>
+<div class="input-group">
+<input type="email" id="email" name="email" placeholder="Your Email">
+<span class="error" id="emailError"></span>
+</div>
+<div class="input-group">
+<textarea id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+<span class="error" id="messageError"></span>
+</div>
+<button type="submit" id="submitBtn">Send Message</button>
+</form>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
